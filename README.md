@@ -1,4 +1,4 @@
-# Uniprot-ID-Filter
+<h1 align="center"> Uniprot-ID-Filter </h1>
 A script for filtering Uniprot Ids.
 
 ## Usage
