@@ -11,6 +11,8 @@ Output files for this script:
 1. predicted_list.txt: Uniprot ID list with predicted pdb structure.
 2. no_predicted_list.txt: Uniprot ID list with no predicted pdb structure.
 
+![](https://github.com/Mr-Fabulous/Uniprot-ID-Filter/blob/main/pipeline.png)
+
 
 ## Prerequisites
 
