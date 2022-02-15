@@ -23,7 +23,7 @@ Output files for this script:
 ``` 
 2. Download all the compressed prediction files to the directory from [here](https://www.alphafold.ebi.ac.uk/download).
 3. Unzip all the compressed files.
-4. Run match_uniprot_id.py. The script will run through every pdb files under the AlphaFold directory and filter out the Uniprot IDs.
+4. Run match_uniprot_id.py. The script runs through every pdb files under the AlphaFold directory and filters out the Uniprot IDs.
 ```sh
     python match_uniprot_id.py
 ``` 
