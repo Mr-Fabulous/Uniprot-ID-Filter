@@ -24,6 +24,12 @@ Output files for this script:
     mkdir AlphaFold
 ``` 
 2. Run the script run_download.sh; This script runs download_files.py for multiple times to download all the files from this [link](http://ftp.ebi.ac.uk/pub/databases/alphafold/latest/).
-3. Run the script filter.sh; This script runs unzip.py and then runs match_uniprot_id.py. The file unzip.py unzips all the files downloaded in step 2; The file match_uniprot_id iterates through every unzipped pdb files and then filters out our target files(based on the provided list). 
-4. After the above three steps are done, two output files will be generated (have_pdb_list and no_pdb_list). The targeted pdb files (which are the corresponding pdb files for the uniprot IDs with predicted strctures) are stored in the folder matched_pdb(automatically generated in step 3).
+```sh
+    sh run_download.sh
+``` 
+4. Run the script filter.sh; This script runs unzip.py and then runs match_uniprot_id.py. The file unzip.py unzips all the files downloaded in step 2; The file match_uniprot_id iterates through every unzipped pdb files and then filters out our target files(based on the provided list). 
+```sh
+    sh filter.sh
+``` 
+6. After the above three steps are done, two output files will be generated (have_pdb_list and no_pdb_list). The targeted pdb files (which are the corresponding pdb files for the uniprot IDs with predicted strctures) are stored in the folder matched_pdb(automatically generated in step 3).
 
