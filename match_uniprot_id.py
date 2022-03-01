@@ -2,7 +2,7 @@
 # @Author: leomiao
 # @Date:   2021-11-17 15:36:06
 # @Last Modified by:   leomiao
-# @Last Modified time: 2022-03-01 16:01:21
+# @Last Modified time: 2022-03-01 16:16:33
 # match uniprot id in no_pdb with files (downloaded from Alphafold) 
 # filter out the uniprot ids with no predicted pdb strucutres
 import os
@@ -69,7 +69,7 @@ for key in uniprot_id_list:
     if uniprot_id_list[key] == True:
         f.write("%s\n" % key)
 
-f= open("no_predicted_list.txt","w+")
+f= open("no_pdb_list.txt","w+")
 
 for key in uniprot_id_list:
     if uniprot_id_list[key] == False:
