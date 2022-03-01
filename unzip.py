@@ -2,14 +2,14 @@
 # @Author: leomiao
 # @Date:   2022-03-01 14:00:30
 # @Last Modified by:   leomiao
-# @Last Modified time: 2022-03-01 15:33:44
+# @Last Modified time: 2022-03-01 17:42:05
 # import required module
 import os
 import tarfile
 from pathlib import Path
 
 # assign directory
-directory = './Alphafold'
+directory = './AlphaFold'
  
 # iterate over files in the directory
 for filename in os.listdir(directory):
