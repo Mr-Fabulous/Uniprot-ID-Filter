@@ -37,7 +37,7 @@ And then run the script.
 ```sh
     sh filter.sh
 ``` 
-4. After the above three steps are done, two output files will be generated (have_pdb_list and no_pdb_list). The targeted pdb files (which are the corresponding pdb files for the uniprot IDs with predicted strctures) are stored in the folder matched_pdb(automatically generated in step 3).
+4. After the above three steps are done, two output files will be generated (have_pdb_list.txt and no_pdb_list.txt). The targeted pdb files (which are the corresponding pdb files for the uniprot IDs with predicted strctures) are stored in the folder matched_pdb(automatically generated in step 3).
 
 ## Code Description
 |File Name|Description|
