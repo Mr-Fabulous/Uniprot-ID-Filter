@@ -39,7 +39,6 @@ Output files for this script:
 generate_list.py|Parses the link from [AlphaFold](http://ftp.ebi.ac.uk/pub/databases/alphafold/latest/) website and saves all download links into url_list.txt for later use in download_files.py.
 download_files.py|Downloads all the files from [AlphaFold](http://ftp.ebi.ac.uk/pub/databases/alphafold/latest/) website except for swissprot.
 unzip.py|Extracts all the downloaded compressed .tar files. 
-match_uniprot_id.py|1. This file iterates through each .pdb.gz file stored in the AlphaFold directory. Two txt files are generated: a. have_pdb_list.txt: Uniprot ID list with predicted pdb structure. b. no_pdb_list.txt: Uniprot ID list with no predicted pdb structure. 
-2. The matched pdb.gz files (that appear in our given uniprot id list) are copied and saved to the matched_pdb folder for further use.
+match_uniprot_id.py|1. This file iterates through each .pdb.gz file stored in the AlphaFold directory. Two txt files are generated: a. have_pdb_list.txt: Uniprot ID list with predicted pdb structure. b. no_pdb_list.txt: Uniprot ID list with no predicted pdb structure. 2. The matched pdb.gz files (that appear in our given uniprot id list) are copied and saved to the matched_pdb folder for further use.
 
 
