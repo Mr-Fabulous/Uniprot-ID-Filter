@@ -28,6 +28,7 @@ Output files for this script:
     sh run_download.sh
 ``` 
 3. Run the script filter.sh; This script runs unzip.py and then runs match_uniprot_id.py. The file unzip.py unzips all the files downloaded in step 2; The file match_uniprot_id iterates through every unzipped pdb files and then filters out our target files(based on the provided list). 
+
 Change the number in this line in filter.sh with the range you want:
 ```sh
     for i in {0..47}
