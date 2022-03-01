@@ -23,11 +23,16 @@ Output files for this script:
 ```sh
     mkdir AlphaFold
 ``` 
-2. Run the script run_download.sh; This script runs download_files.py for multiple times to download all the files from this [link](http://ftp.ebi.ac.uk/pub/databases/alphafold/latest/).
+2. Run the script run_download.sh; This script runs download_files.py for multiple times to download all the files from this [link](http://ftp.ebi.ac.uk/pub/databases/alphafold/latest/). Please remember to update the range in the for loop in the script(the range should be the number of the files you want to download); In our example, the range is between 0 and 47 (since there are a total of 48 files to download).
 ```sh
     sh run_download.sh
 ``` 
 3. Run the script filter.sh; This script runs unzip.py and then runs match_uniprot_id.py. The file unzip.py unzips all the files downloaded in step 2; The file match_uniprot_id iterates through every unzipped pdb files and then filters out our target files(based on the provided list). 
+Change the number in this line in filter.sh with the range you want:
+```sh
+    for i in {0..47}
+``` 
+And then run the script.
 ```sh
     sh filter.sh
 ``` 
